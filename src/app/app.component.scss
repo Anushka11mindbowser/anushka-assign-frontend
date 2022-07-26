@@ -1,0 +1,39 @@
+.container-fluid {
+    background-color: black;
+    height: 35px;
+    margin-top: 0px;
+}
+
+.container-fluid p {
+    color: whitesmoke;
+    margin: 2px;
+    padding: 2px;
+    font-weight: 400;
+}
+
+a {
+    color: black;
+    font-weight: 700;
+}
+
+.product-pricing {
+    display: flex;
+}
+
+.space {
+    width: 15px;
+}
+
+input {
+    width: 50px;
+    border: none;
+}
+
+button {
+    border-radius: 25px;
+}
+
+.product {
+    display: flex;
+    
+}
