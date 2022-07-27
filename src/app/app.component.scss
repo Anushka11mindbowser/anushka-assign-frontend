@@ -1,39 +1,89 @@
-.container-fluid {
-    background-color: black;
-    height: 35px;
-    margin-top: 0px;
-}
-
-.container-fluid p {
-    color: whitesmoke;
-    margin: 2px;
-    padding: 2px;
-    font-weight: 400;
-}
-
-a {
-    color: black;
-    font-weight: 700;
-}
-
-.product-pricing {
-    display: flex;
-}
-
-.space {
-    width: 15px;
-}
-
-input {
-    width: 50px;
-    border: none;
-}
-
-button {
-    border-radius: 25px;
-}
-
-.product {
-    display: flex;
+    .navbar {
+        background-color: black;
+        height: 44px;
+        width: 1920px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        display: flex;
+    }
     
-}
+    .days {
+        margin-left: 277px;
+        margin-right: 1459px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        /* Color - 5 */
+        color: #A2A6B0;
+    }
+    
+    .contact {
+        position: absolute;
+        left: 78.44%;
+        right: 14.43%;
+        top: 1.2%;
+        bottom: 97.13%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .navbar-expand-lg {
+        position: absolute;
+        height: 92px;
+        width: 1920px;
+        left: 0px;
+        top: 44px;
+        border-radius: 0px;
+        left: 0%;
+        right: 0%;
+        top: 4.07%;
+        bottom: 87.41%;
+        background: #FFFFFF;
+    }
+    
+    img {
+        height: 40px;
+        width: 33px;
+        margin-left: 288px;
+        margin-top: 25px;
+        margin-top: 27px;
+        border-radius: 0px;
+    }
+    
+    ul {
+        margin-left: 58.23px;
+    }
+    
+    li {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
