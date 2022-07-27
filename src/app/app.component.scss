@@ -10,7 +10,7 @@
     
     .days {
         margin-left: 277px;
-        margin-right: 1459px;
+        // margin-right: 1459px;
         margin-top: 5px;
         margin-bottom: 7px;
         font-family: 'Poppins';
@@ -45,7 +45,7 @@
     .navbar-expand-lg {
         position: absolute;
         height: 92px;
-        width: 1920px;
+        // width: 1920px;
         left: 0px;
         top: 44px;
         border-radius: 0px;
@@ -85,5 +85,14 @@
         display: flex;
         align-items: center;
         text-align: center;
+        color: #000000;
+    }
+    
+    .container text-center {
+        height: 0px;
+        width: 1920.0000000000073px;
+        left: 0px;
+        top: 237.00018310546875px;
+        border-radius: 0px;
         color: #000000;
     }
