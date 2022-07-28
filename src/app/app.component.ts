@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,54 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'payment-gateway';
+
+  paymentHandler:any = null;
+  
+  constructor(){
+
+  }
+
+  ngOnInit(){
+    this.invokeStripe()
+  }
+
+  makePayment(amount: any) {
+    const paymentHandler = (<any>window).StripeCheckout.configure({
+      key: 'pk_test_51LQVquSBTNc3iOhUZLD2PhPsdL9rhSFjCTGbcfdzUiMOOm2FDlungzRNuSUP1QI3vlWJ9i88w10BWWgyHarzbqgO00AzCF9jum',
+      locale: 'auto',
+      token: function (stripeToken: any) {
+        console.log(stripeToken);
+        alert('Stripe token generated!');
+      },
+    });
+    paymentHandler.open({
+      name: 'Apple Airpods',
+      description: 'Magic Remastered',
+      amount: amount * 100,
+    });
+  }
+  
+
+  invokeStripe() {
+    if (!window.document.getElementById('stripe-script')) {
+      const script = window.document.createElement('script');
+      script.id = 'stripe-script';
+      script.type = 'text/javascript';
+      script.src = 'https://checkout.stripe.com/checkout.js';
+      script.onload = () => {
+        this.paymentHandler = (<any>window).StripeCheckout.configure({
+          key: 'pk_test_51LQVquSBTNc3iOhUZLD2PhPsdL9rhSFjCTGbcfdzUiMOOm2FDlungzRNuSUP1QI3vlWJ9i88w10BWWgyHarzbqgO00AzCF9jum',
+          locale: 'auto',
+          token: function (stripeToken: any) {
+            console.log(stripeToken);
+            alert('Payment has been successfull!');
+          },
+        });
+      };
+      window.document.body.appendChild(script);
+    }
+  }
+
+
+
 }

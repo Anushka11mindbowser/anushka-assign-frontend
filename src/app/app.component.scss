@@ -1,7 +1,6 @@
     .navbar {
         background-color: black;
         height: 44px;
-        width: 1920px;
         left: 0px;
         top: 0px;
         border-radius: 0px;
@@ -56,15 +55,6 @@
         background: #FFFFFF;
     }
     
-    img {
-        height: 40px;
-        width: 33px;
-        margin-left: 288px;
-        margin-top: 25px;
-        margin-top: 27px;
-        border-radius: 0px;
-    }
-    
     ul {
         margin-left: 58.23px;
     }
@@ -88,11 +78,123 @@
         color: #000000;
     }
     
-    .container text-center {
-        height: 0px;
-        width: 1920.0000000000073px;
+    .product-bar {
+        position: absolute;
+        width: 1920px;
+        height: 101px;
         left: 0px;
-        top: 237.00018310546875px;
-        border-radius: 0px;
+        top: 136px;
+        background: white;
+    }
+    
+    .about-product {
+        position: absolute;
+        width: 103px;
+        height: 21px;
+        left: 382px;
+        top: 176px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        /* Color - 10 */
+        color: #666666;
+    }
+    
+    .container text-center {
+        position: absolute;
+        width: 1920px;
+        left: 0px;
+        top: 237px;
+    }
+    
+    .card {
+        position: absolute;
+        width: 1064px;
+        height: 747px;
+        left: 0px;
+        top: 237px;
+        background: #F5F7FF;
+    }
+    
+    .card h3 {
+        position: absolute;
+        width: 100px;
+        height: 18px;
+        left: 381px;
+        top: 301px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* Color - 5 */
+        color: #A2A6B0;
+    }
+    
+    .card-2 {
+        position: absolute;
+        width: 855px;
+        height: 747px;
+        left: 1065px;
+        top: 237px;
+        background: #FFFFFF
+    }
+    
+    h1 {
+        position: absolute;
+        width: 583px;
+        height: 48px;
+        left: 381px;
+        top: 349px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        /* identical to box height */
+        color: #000000;
+    }
+    
+    .card p {
+        position: absolute;
+        width: 138px;
+        height: 18px;
+        left: 382px;
+        top: 409px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    
+    .description {
+        position: absolute;
+        width: 567px;
+        height: 312px;
+        left: 379px;
+        top: 451px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        display: flex;
+        align-items: center;
+        /* Color - 7 */
         color: #000000;
     }
