@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaymentService } from './services/payment.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,10 @@ export class AppComponent {
   title = 'payment-gateway';
 
   paymentHandler:any = null;
+
+  paymentDetails:any
   
-  constructor(){
+  constructor(private ps:PaymentService){
 
   }
 
@@ -46,9 +49,20 @@ export class AppComponent {
           key: 'pk_test_51LQVquSBTNc3iOhUZLD2PhPsdL9rhSFjCTGbcfdzUiMOOm2FDlungzRNuSUP1QI3vlWJ9i88w10BWWgyHarzbqgO00AzCF9jum',
           locale: 'auto',
           token: function (stripeToken: any) {
+
+
             console.log(stripeToken);
+            
             alert('Payment has been successfull!');
+            alert(script)
+
+            this.ps.successfulPayment(stripeToken).subscribe((data:{})=>
+            this.paymentDetails=data)
+            console.log(this.paymentDetails)
+
+
           },
+          
         });
       };
       window.document.body.appendChild(script);

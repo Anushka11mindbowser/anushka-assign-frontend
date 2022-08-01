@@ -1,200 +1,223 @@
-    .navbar {
-        background-color: black;
-        height: 44px;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        display: flex;
-    }
-    
-    .days {
-        margin-left: 277px;
-        // margin-right: 1459px;
-        margin-top: 5px;
-        margin-bottom: 7px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        /* Color - 5 */
-        color: #A2A6B0;
-    }
-    
-    .contact {
-        position: absolute;
-        left: 78.44%;
-        right: 14.43%;
-        top: 1.2%;
-        bottom: 97.13%;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    
-    .navbar-expand-lg {
-        position: absolute;
-        height: 92px;
-        // width: 1920px;
-        left: 0px;
-        top: 44px;
-        border-radius: 0px;
-        left: 0%;
-        right: 0%;
-        top: 4.07%;
-        bottom: 87.41%;
-        background: #FFFFFF;
-    }
-    
-    ul {
-        margin-left: 58.23px;
-    }
-    
-    li {
-        margin-top: 6px;
-        margin-bottom: 6px;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-    
-    a {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 21px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #000000;
-    }
-    
-    .product-bar {
-        position: absolute;
-        width: 1920px;
-        height: 101px;
-        left: 0px;
-        top: 136px;
-        background: white;
-    }
-    
-    .about-product {
-        position: absolute;
-        width: 103px;
-        height: 21px;
-        left: 382px;
-        top: 176px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 21px;
-        /* identical to box height */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        /* Color - 10 */
-        color: #666666;
-    }
-    
-    .container text-center {
-        position: absolute;
-        width: 1920px;
-        left: 0px;
-        top: 237px;
-    }
-    
-    .card {
-        position: absolute;
-        width: 1064px;
-        height: 747px;
-        left: 0px;
-        top: 237px;
-        background: #F5F7FF;
-    }
-    
-    .card h3 {
-        position: absolute;
-        width: 100px;
-        height: 18px;
-        left: 381px;
-        top: 301px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height */
-        display: flex;
-        align-items: center;
-        /* Color - 5 */
-        color: #A2A6B0;
-    }
-    
-    .card-2 {
-        position: absolute;
-        width: 855px;
-        height: 747px;
-        left: 1065px;
-        top: 237px;
-        background: #FFFFFF
-    }
-    
-    h1 {
-        position: absolute;
-        width: 583px;
-        height: 48px;
-        left: 381px;
-        top: 349px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 48px;
-        /* identical to box height */
-        color: #000000;
-    }
-    
-    .card p {
-        position: absolute;
-        width: 138px;
-        height: 18px;
-        left: 382px;
-        top: 409px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height */
-        display: flex;
-        align-items: center;
-        color: #000000;
-    }
-    
-    .description {
-        position: absolute;
-        width: 567px;
-        height: 312px;
-        left: 379px;
-        top: 451px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
-        display: flex;
-        align-items: center;
-        /* Color - 7 */
-        color: #000000;
-    }
+.navbar {
+    height: 44px;
+    background-color: #000000;
+}
+
+.days {
+    top: 4px;
+    bottom: 2px;
+    padding: 2px;
+    margin-left: 277px;
+    width: 184px;
+    height: 27px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    /* Color - 5 */
+    color: #a2a6b0;
+}
+
+.days span {
+    color: white;
+}
+
+.contact {
+    height: 18px;
+    width: 165px;
+    margin-right: 277px;
+    top: 13px;
+    border-radius: nullpx;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar-expand-lg {
+    position: absolute;
+    height: 92px;
+    top: 44px;
+    background: white;
+}
+
+.brand-logo {
+    height: 40px;
+    width: 33x;
+    margin-left: 175px;
+    top: 13px;
+}
+
+ul {
+    margin-left: 58.23px;
+}
+
+li {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.navbar-thirdbar {
+    background-color: #ffffff;
+    height: 101px;
+    margin-top: 90px;
+}
+
+.about-product {
+    position: absolute;
+    width: 103px;
+    height: 21px;
+    margin-left: 275px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Color - 10 */
+    color: #666666;
+}
+
+.price {
+    height: 101px;
+    width: 125px;
+    margin-left: 900px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    align-items: right;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.price p {
+    height: 101px;
+    width: 96px;
+    left: 1282px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    position: absolute;
+    height: 27px;
+    width: 46px;
+    left: 0px;
+    top: 11px;
+    border-radius: nullpx;
+}
+
+.counter {
+    height: 101px;
+    width: 125px;
+    margin-left: 1100px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    align-items: right;
+    margin-top: 220px;
+    padding: 20px;
+}
+
+.container p {
+    height: 18px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 26px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.container h1 {
+    height: 48px;
+    width: 583px;
+    left: 381px;
+    top: 349px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.container h2 {
+    height: 18px;
+    width: 138px;
+    margin-left: 25px;
+    top: 409px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.description {
+    height: 150px;
+    width: 567px;
+    left: 379px;
+    top: 451px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.code {
+    height: 9px;
+    width: 70px;
+    left: 381px;
+    top: 803px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 163px;
+}
+
+.input {
+    position: absolute;
+}
