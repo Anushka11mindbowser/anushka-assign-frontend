@@ -37,6 +37,9 @@ export class AppComponent {
     this.airpodsProduct = data
     this.descriptionArray = this.airpodsProduct[data]
     console.log(this.airpodsProduct)
+    console.log(this.airpodsProduct.data.product_description)
+    let description_string = this.airpodsProduct.data.product_description
+    this.descriptionArray = description_string.split(".")
     console.log(this.descriptionArray)
   })
  }
