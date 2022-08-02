@@ -45,6 +45,7 @@
 
 .navbar-expand-lg {
     position: absolute;
+    width: 100%;
     height: 92px;
     top: 44px;
     background: white;
@@ -80,73 +81,14 @@ a {
     color: #000000;
 }
 
-.navbar-thirdbar {
-    background-color: #ffffff;
+.navbar-expand-lg-2 {
+    position: relative;
+    background-color: white;
     height: 101px;
-    margin-top: 90px;
-}
-
-.about-product {
-    position: absolute;
-    width: 103px;
-    height: 21px;
-    margin-left: 275px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* Color - 10 */
-    color: #666666;
-}
-
-.price {
-    height: 101px;
-    width: 125px;
-    margin-left: 900px;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    align-items: right;
-    margin-top: 30px;
-    padding: 20px;
-}
-
-.price p {
-    height: 101px;
-    width: 96px;
-    left: 1282px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.input {
-    position: absolute;
-    height: 27px;
-    width: 46px;
-    left: 0px;
-    top: 11px;
-    border-radius: nullpx;
-}
-
-.counter {
-    height: 101px;
-    width: 125px;
-    margin-left: 1100px;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    align-items: right;
-    margin-top: 220px;
-    padding: 20px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 85px;
 }
 
 .container p {
@@ -161,6 +103,61 @@ a {
     line-height: 18px;
     letter-spacing: 0px;
     text-align: left;
+}
+
+.about-product {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666666;
+}
+
+.about-product p {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.product-pricing {
+    width: 450px;
+    height: 101px;
+    margin-right: 80px;
+    padding: 20px;
+    display: flex;
+}
+
+.product-pricing p {
+    margin-top: 20px;
+    height: 101px;
+    width: 96px;
+    font: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+}
+
+input {
+    height: 35px;
+    width: 46px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+button {
+    height: 35px;
+    width: 151px;
+    left: 0px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.container img {
+    margin-top: 80px;
+    margin-left: 29px;
 }
 
 .container h1 {
@@ -218,6 +215,17 @@ a {
     margin-bottom: 163px;
 }
 
-.input {
-    position: absolute;
+.col-7 {
+    height: 100%;
+    margin-left: 0px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar-expand-lg {
+        width: 100%;
+        text-align: center;
+    }
 }

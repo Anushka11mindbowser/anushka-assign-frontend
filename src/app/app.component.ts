@@ -12,6 +12,13 @@ export class AppComponent {
   paymentHandler:any = null;
 
   paymentDetails:any
+
+  airpodsProduct:any
+
+  descriptionArray:any
+  
+
+  
   
   constructor(private ps:PaymentService){
 
@@ -19,7 +26,20 @@ export class AppComponent {
 
   ngOnInit(){
     this.invokeStripe()
+    this.retrieveProduct()
   }
+
+  
+  
+
+ retrieveProduct(){
+  this.ps.getProduct().subscribe((data:any)=>{
+    this.airpodsProduct = data
+    this.descriptionArray = this.airpodsProduct[data]
+    console.log(this.airpodsProduct)
+    console.log(this.descriptionArray)
+  })
+ }
 
   makePayment(amount: any) {
     const paymentHandler = (<any>window).StripeCheckout.configure({

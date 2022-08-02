@@ -52,35 +52,41 @@
         </nav>
     </div>
 
+
     <div class="product-bar">
-        <nav class="navbar-thirdbar">
-            <div class="container-fluid">
-                <div class="about-product">
-                    <p>About Product</p>
-                </div>
-                <div class="price">
-                    <p>Price: $299</p>
-                    <input type="number">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg-2">
+                <div class="container-fluid">
+                    <div class="about-product">
+                        <p>About Product</p>
+
+                    </div>
+                    <div class="product-pricing">
+                        <p>Price: $299.00</p>
+                        <input type="number">
+                        <button class="btn btn-primary" (click)="makePayment(25)">Buy Now</button>
+
+                    </div>
 
                 </div>
-            </div>
+            </nav>
+        </div>
 
-
-        </nav>
     </div>
+    <br>
 
     <div class="container text-center">
         <div class="row">
             <div class="col-7" style="background-color: #F5F7FF;">
                 <div class="container">
-                    <p>APPLE PRODUCTS</p>
-                    <h1>New Apple AirPods (3rd Generation)</h1>
-                    <h2>It's magic, remastered!</h2>
+                    <p>{{airpodsProduct.data.company}}</p>
+                    <h1>{{airpodsProduct.data.product_title}}</h1>
+                    <h2>{{airpodsProduct.data.product_subtitle}}</h2>
                     <div class="description">
-                        <p>This is description</p>
+                        <p>{{airpodsProduct.data.product_description}}</p>
                     </div>
                     <div class="code">
-                        <p>SKU D5515AI</p>
+                        <p>{{airpodsProduct.data.product_code}}</p>
                     </div>
                 </div>
             </div>

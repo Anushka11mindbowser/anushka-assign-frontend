@@ -7,14 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class PaymentService {
 
+  url = "http://127.0.0.1:8000/card/getProduct/2"
+
   constructor(private http:HttpClient) { }
 
-successfulPayment(payment:any):Observable<any>{
-  return this.http.post("http://localhost:3000/transactions", payment)
-}
+  getProduct(): Observable<any> {
+    return this.http.get<any>(this.url);
+  }
 
-failedPayment(id:any):Observable<any>{
-  return this.http.post("http://127.0.0.1:8000/card/transaction_list", id)
-}
 
 }
