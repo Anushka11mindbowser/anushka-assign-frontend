@@ -1,0 +1,1 @@
+var paymentElement = elements.create('payment');

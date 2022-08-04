@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { PaymentService } from './services/payment.service';
+import { FormsModule } from '@angular/forms';
+import {loadStripe} from '@stripe/stripe-js';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
@@ -16,21 +21,30 @@ export class AppComponent {
   airpodsProduct:any
 
   descriptionArray:any
+
+  
+productQuantity = 1;
+
+
   
 
   
   
-  constructor(private ps:PaymentService){
+  constructor(private ps:PaymentService, private router:Router){
 
   }
 
   ngOnInit(){
-    this.invokeStripe()
+   
+    
     this.retrieveProduct()
+    console.log(this.productQuantity)
   }
 
   
-  
+  goToSuccess(){
+    this.router.navigateByUrl('/success-page')
+  }
 
  retrieveProduct(){
   this.ps.getProduct().subscribe((data:any)=>{
@@ -44,54 +58,12 @@ export class AppComponent {
   })
  }
 
-  makePayment(amount: any) {
-    const paymentHandler = (<any>window).StripeCheckout.configure({
-      key: 'pk_test_51LQVquSBTNc3iOhUZLD2PhPsdL9rhSFjCTGbcfdzUiMOOm2FDlungzRNuSUP1QI3vlWJ9i88w10BWWgyHarzbqgO00AzCF9jum',
-      locale: 'auto',
-      token: function (stripeToken: any) {
-        console.log(stripeToken);
-        alert('Stripe token generated!');
-      },
-    });
-    paymentHandler.open({
-      name: 'Apple Airpods',
-      description: 'Magic Remastered',
-      amount: amount * 100,
-    });
-  }
   
-
-  invokeStripe() {
-    if (!window.document.getElementById('stripe-script')) {
-      const script = window.document.createElement('script');
-      script.id = 'stripe-script';
-      script.type = 'text/javascript';
-      script.src = 'https://checkout.stripe.com/checkout.js';
-      script.onload = () => {
-        this.paymentHandler = (<any>window).StripeCheckout.configure({
-          key: 'pk_test_51LQVquSBTNc3iOhUZLD2PhPsdL9rhSFjCTGbcfdzUiMOOm2FDlungzRNuSUP1QI3vlWJ9i88w10BWWgyHarzbqgO00AzCF9jum',
-          locale: 'auto',
-          token: function (stripeToken: any) {
-
-
-            console.log(stripeToken);
-            
-            alert('Payment has been successfull!');
-            alert(script)
-
-            this.ps.successfulPayment(stripeToken).subscribe((data:{})=>
-            this.paymentDetails=data)
-            console.log(this.paymentDetails)
-
-
-          },
-          
-        });
-      };
-      window.document.body.appendChild(script);
-    }
+  
+  goToCheckout(quantity:any){
+    this.ps.checkout(quantity.value).subscribe((url)=>{
+      window.open(url)
+    })
   }
-
-
 
 }
