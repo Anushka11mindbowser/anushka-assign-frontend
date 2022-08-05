@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SuccessPageComponent } from './success-page/success-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 
@@ -13,6 +14,7 @@ import { SuccessPageComponent } from './success-page/success-page.component';
   declarations: [
     AppComponent,
     SuccessPageComponent,
+    HomePageComponent,
     ],
   imports: [
     BrowserModule,
