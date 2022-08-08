@@ -56,8 +56,8 @@
                         <p>About Product</p>
                     </div>
                     <div class="product-pricing">
-                        <p>Price: $299.00</p>
-                        <input type="number" id="paymentbtn">
+                        <p>Price: <span style="font-weight: bolder;">$ {{airpodsProduct.data.product_price}}.00</span></p>
+                        <input type="number" id="paymentbtn" min="1" max="5" value="1">
                         <button class="btn btn-primary" (click)="goToCheckout(productQuantity)">
               Buy Now
             </button>
