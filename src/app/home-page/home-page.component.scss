@@ -161,6 +161,7 @@
     .container img {
         margin-top: 80px;
         margin-left: 29px;
+        margin-bottom: 50px;
     }
     
     .container h1 {
@@ -212,12 +213,13 @@
     .code {
         height: 9px;
         width: 70px;
-        left: 381px;
-        top: 803px;
+        left: 125px;
+        top: 600px;
+        position: absolute;
         border-radius: nullpx;
         font-family: Poppins;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 18px;
         letter-spacing: 0px;
         text-align: center;
@@ -232,6 +234,7 @@
     .col-7 {
         height: 450px;
         margin-left: 0px;
+        background-color: #f5f7ff;
     }
     
     .col-5 {
@@ -248,13 +251,58 @@
         font-weight: 900;
     }
     
+    .container {
+        height: 100%;
+    }
+    
     @media only screen and (max-width: 768px) {
-        .navbar a {
+        .navbar {
             width: 100%;
-            display: flex;
+            left: 0px;
+            right: 0px;
         }
-        .description {
-            position: relative;
-            top: 150px;
+        .days {
+            margin-left: 25px;
+        }
+        .contact {
+            margin-right: 50px;
+        }
+        .navbar-expand-lg {
+            width: 100%;
+            left: 0px;
+            right: 0px;
+        }
+        .brand-logo {
+            margin-left: 35px;
+        }
+        .about-product {
+            top: 360px;
+            position: absolute;
+            width: 100%;
+        }
+        .col-5 {
+            top: 75px;
+            width: 500px;
+            height: 500px;
+            left: 180px;
+            position: absolute;
+            margin: auto;
+        }
+        .product-pricing {
+            top: 405px;
+            position: absolute;
+            width: 100%;
+            left: 75px;
+        }
+        .col-7 {
+            top: 620px;
+            position: absolute;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .code {
+            top: 380px;
+            position: absolute;
+            left: 25px;
         }
     }

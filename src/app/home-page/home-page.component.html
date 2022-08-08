@@ -70,15 +70,17 @@
 
     <div class="container text-center">
         <div class="row">
-            <div class="col-7" style="background-color: #f5f7ff">
+            <div class="col-7">
                 <div class="container">
                     <p>{{ airpodsProduct.data.company }}</p>
-                    <h1>{{ airpodsProduct.data.product_title }}</h1>
+                    <div class="device-title">
+                        <h1>{{ airpodsProduct.data.product_title }}</h1>
+                    </div>
                     <h2>{{ airpodsProduct.data.product_subtitle }}</h2>
                     <div class="description">
                         <li *ngFor="let d of descriptionArray">{{ d }}</li>
                     </div>
-                    <br />
+
                     <div class="code">
                         <p>{{ airpodsProduct.data.product_code }}</p>
                     </div>
