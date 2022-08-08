@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PaymentService {
 
-  url = "http://127.0.0.1:8000/card/getProduct/2"
+  url = "http://127.0.0.1:8000/card/getProduct/3"
 
   constructor(private http:HttpClient) { }
 
